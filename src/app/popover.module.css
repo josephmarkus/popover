@@ -1,0 +1,64 @@
+.container {
+  position: absolute;
+  max-width: 260px;
+  padding-top: 12px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.containerOpen {
+  visibility: visible;
+  pointer-events: all;
+}
+
+.popover {
+  padding: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  z-index: 9999;
+}
+
+/* Arrow */
+.popover::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 0px;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
+  border-bottom: 28px solid black;
+}
+
+.header {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.closeButton {
+  padding: 0;
+  appearance: none;
+  border: none;
+  margin-left: auto;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.closeIcon {
+  height: 1.1em;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 1em;
+  gap: 0.5em;
+}

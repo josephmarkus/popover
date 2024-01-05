@@ -1,95 +1,71 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import { PopoverExample } from "./PopoverExample";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={styles.outerContainer}>
+      <div className={styles.container}>
+        <div className={styles.imageContainer}></div>
+        <div className={styles.content}>
+          <p>
+            Curabitur et nisi imperdiet urna blandit rutrum. Nullam congue
+            venenatis lorem quis dignissim. Cras sagittis sagittis magna ut
+            laoreet. Donec vitae magna quis mi congue cursus et vitae orci.
+            Phasellus eget magna eu nisl tempor condimentum. Phasellus bibendum
+            orci leo, at pharetra dui facilisis eu. Sed interdum eros tristique
+            neque congue, vitae tristique erat vulputate. Sed porta lacus id
+            odio dapibus sodales dignissim vel ligula. Maecenas arcu elit,
+            varius nec nulla efficitur, rutrum bibendum dolor.
+          </p>
+
+          <PopoverExample />
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <p>
+            Maecenas consectetur urna a placerat vehicula. In a nisi a turpis
+            vulputate eleifend vel sit amet mi. Curabitur pharetra lobortis
+            lacus. Etiam tortor erat, varius ac vestibulum non, porta nec est.
+            Etiam risus mi, bibendum id vehicula faucibus, iaculis sed ex. Nam
+            pharetra, enim et tincidunt tempus, massa nisl eleifend velit, quis
+            gravida turpis ante tempor turpis. Maecenas ullamcorper at quam eget
+            pharetra. Donec ut erat enim. Integer posuere risus ut massa
+            placerat imperdiet. Maecenas suscipit libero quis dolor consequat,
+            at dapibus enim fermentum.
+          </p>
+
+          <PopoverExample />
+        </div>
+        <div className={styles.imageContainer}></div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+      <div className={styles.container}>
+        <div className={styles.imageContainer}></div>
+        <div className={styles.content}>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Nam mattis mauris ipsum, ut egestas magna sollicitudin eget.
+            Curabitur scelerisque ornare nisl ultrices interdum. Curabitur ac
+            dictum sapien, sit amet facilisis turpis. Aenean feugiat lacus
+            risus, et luctus dolor semper ac. Fusce consequat convallis sapien
+            id sollicitudin. Curabitur in purus bibendum, pulvinar turpis eu,
+            aliquam augue. Aliquam dignissim vulputate odio. Aenean sit amet
+            nunc tortor. In vel venenatis turpis, quis viverra arcu. In
+            consectetur sem ac risus rutrum porta. Cras blandit, arcu vel
+            imperdiet pellentesque, metus metus egestas lectus, sed fermentum
+            augue elit quis urna. Duis euismod leo posuere, iaculis leo lacinia,
+            condimentum odio. Etiam consequat tortor ac velit fermentum, a
+            pretium orci condimentum. Mauris eu eleifend orci, ut molestie arcu.
+            Maecenas sit amet molestie leo, a pulvinar risus. Donec nec justo
+            eget lorem aliquam aliquet.
           </p>
-        </a>
+
+          <PopoverExample />
+        </div>
       </div>
     </main>
-  )
+  );
 }
